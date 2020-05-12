@@ -1,0 +1,25 @@
+.checkboxWrap{
+  position: relative;
+  input[type="checkbox"]{
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    -webkit-appearance: none;
+    border: 2px solid #777;
+    background: #fcfcfc;
+    cursor: pointer;
+  }
+  input[type="checkbox"]:checked + .mark{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    display: block;
+    width: 10px;
+    height: 5px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    transform: rotate(-45deg);
+    pointer-events: none;
+  }
+}
